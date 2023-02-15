@@ -1,4 +1,7 @@
 # LATIHAN1DPBO2023
+
+Saya Davin mengerjakan evaluasi LATIHAN1DPBO2023 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
+
 Latihan praktikum dpbo 1
 
 #SAYA MENGGUNAKAN PROGRAM PHP SEBAGAI CONTOH
@@ -15,7 +18,72 @@ Mengapa?
     Untuk saat ini, alamat gambar dipaksakan sama ("default.jpg").
     Semua atribut dapat diambil menggunakan getter.
     Semua atribut dapat diset menggunakan setter
-     
+    
+    Atribut:
+    
+##    
+    private $id;
+    private $name;
+    private $nim;
+    private $prodi;
+    private $fakultas;
+    private $imgPath;
+<br>
+    Metode:
+    
+##    
+    public function __construct($id, $name, $nim, $prodi, $fakultas){
+        $this->id = $id;
+        $this->name = $name;
+        $this->nim = $nim;
+        $this->prodi = $prodi;
+        $this->fakultas = $fakultas;
+        $this->imgPath = "default.jpg";
+        # tidak ada set foto, jadi pake yg default dulu
+    }
+
+
+    //Setter
+    public function setId($input){
+        $this->id = $input;
+    }
+    public function setName($input){
+        $this->name = $input;
+    }
+    public function setNim($input){
+        $this->nim = $input;
+    }
+    public function setProdi($input){
+        $this->prodi = $input;
+    }
+    public function setFakultas($input){
+        $this->fakultas = $input;
+    }
+    public function setImgPath($input){
+        $this->imgPath;
+    }
+
+    // Getter
+    public function getId(){
+        return $this->id;
+    }
+    public function getName(){
+        return $this->name;
+    }
+    public function getNim(){
+        return $this->nim;
+    }
+    public function getProdi(){
+        return $this->prodi;
+    }
+    public function getFakultas(){
+        return $this->fakultas;
+    }
+    public function getImgPath(){
+        return $this->imgPath;
+    }
+    
+<br>     
      b) Program.php
      Merupakan kelas yang mengatasi pengolahan data.
      Untuk saat ini, fokus pada manajemen file.
