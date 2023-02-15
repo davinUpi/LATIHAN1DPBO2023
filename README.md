@@ -12,12 +12,13 @@ Mengapa?
 
 # Penjelasan Desain
  1. PHP
-    a) Mahasiswa.php
+    a) Mahasiswa.php (Class)
     Merupakan sebuah kelas yang berisi data-data Mahasiswa sebagai atribut.
     Adapun atribut-atribut itu adalah id, nama, nim, prodi, fakultas, dan alamat gambar.
     Untuk saat ini, alamat gambar dipaksakan sama ("default.jpg").
     Semua atribut dapat diambil menggunakan getter.
-    Semua atribut dapat diset menggunakan setter
+    Semua atribut dapat diset menggunakan setter.
+    Mahasiswa digunakan di dalam Program.php, index.php, delete.php, dan form.php
     
     Atribut:
     
@@ -84,11 +85,11 @@ Mengapa?
     }
     
 <br>     
-     b) Program.php
+     b) Program.php (Class)
      Merupakan kelas yang mengatasi pengolahan data.
      Untuk saat ini, fokus pada manajemen file.
-     Terdapat beberapa metoda dan atribut <br>
-     <hr>
+     Terdapat beberapa metoda dan atribut 
+     Kelas Program digunakan di index.php, form.php, dan delete.php <br>
      Atribut:
 ##      
       private $filepath;
